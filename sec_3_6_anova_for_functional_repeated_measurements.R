@@ -118,6 +118,6 @@ set.seed(123)
 results_bm <- rpt_rfanova(yy, k = 5:30, projection = "BM")
 par(mfrow = c(1, 2), mar = c(4, 4, 2, 0.1))
 plot(5:30, results_gauss$p_values, type = "l", 
-     main = "Gaussian white noise", xlab = "k", ylab = "p-value")
+     main = "Gaussian white noise", xlab = expression(italic(l)), ylab = "p-value")
 plot(5:30, results_bm$p_values, type = "l", 
-     main = "Brownian motion", xlab = "k", ylab = "p-value")
+     main = "Brownian motion", xlab = expression(italic(l)), ylab = "p-value")
