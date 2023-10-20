@@ -35,14 +35,14 @@ matplot(x = 5:30, y = matrix(c(fanova_trp_1$TRP$pvalues.anova,
                                fanova_trp_1$TRP$pvalues.WTPS),
                              ncol = 3),
         type = "l", col = 1, lty = 1:3,
-        main = "Gaussian white noise", xlab = "k", ylab = "p-value")
+        main = "Gaussian white noise", xlab = expression(italic(l)), ylab = "p-value")
 legend("topright", legend = c("ANOVA", "ATS", "WTPS"), lty = 1:3)
 matplot(x = 5:30, y = matrix(c(fanova_trp_2$TRP$pvalues.anova,
                                fanova_trp_2$TRP$pvalues.ATS,
                                fanova_trp_2$TRP$pvalues.WTPS),
                              ncol = 3),
         type = "l", col = 1, lty = 1:3,
-        main = "Brownian motion", xlab = "k", ylab = "p-value")
+        main = "Brownian motion", xlab = expression(italic(l)), ylab = "p-value")
 legend("topright", legend = c("ANOVA", "ATS", "WTPS"), lty = 1:3)
 
 # the same as above but using appropriate function from fdANOVA package
